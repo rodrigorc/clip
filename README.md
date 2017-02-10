@@ -23,6 +23,18 @@ and then paste into an email message.
 
 There are endless uses!
 
+## Compilation
+
+This program uses Gtk to handle the clipboard, either Gtk-2.0 or Gtk-3.0, to be chosen at compilation time.
+
+To compile for Gtk-2:
+
+    $ gcc `pkg-config gtk+-2.0 --cflags --libs` -O2 clip.c -o clip
+
+Or for Gtk-3:
+
+    $ gcc `pkg-config gtk+-3.0 --cflags --libs` -O2 clip.c -o clip
+
 ## Clipboards
 
 Before going on, a couple of clarifications about the clipboard in X systems:
